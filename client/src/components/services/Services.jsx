@@ -10,7 +10,7 @@ export default function Services() {
       <div className="absolute top-0 right-0 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-purple-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="What I Offer"
           title={<>Services That <span className="gradient-text">Deliver Results</span></>}

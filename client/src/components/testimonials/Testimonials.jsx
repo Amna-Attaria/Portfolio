@@ -15,7 +15,7 @@ export default function Testimonials() {
     <section id="testimonials" className="section-padding relative overflow-hidden bg-slate-950/50">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-72 bg-blue-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="Client Feedback"
           title={<>What Clients <span className="gradient-text">Say</span></>}

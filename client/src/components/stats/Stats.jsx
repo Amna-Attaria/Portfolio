@@ -33,7 +33,7 @@ export default function Stats() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {STATS.map((stat, i) => (
             <motion.div

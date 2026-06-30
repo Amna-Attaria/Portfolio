@@ -8,7 +8,7 @@ export default function Experience() {
     <section id="experience" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 right-0 w-72 h-72 bg-purple-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="My Journey"
           title={<>Experience & <span className="gradient-text">Achievements</span></>}

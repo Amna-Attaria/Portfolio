@@ -27,35 +27,35 @@ export default function About() {
       <div className="absolute top-0 left-0 w-72 h-72 bg-blue-600/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-purple-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto" ref={ref}>
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0" ref={ref}>
         <SectionHeader
           eyebrow="About Me"
           title={<>The Story <span className="gradient-text">Behind the Code</ span></>}
           description="A passionate developer who turned curiosity into craft."
         />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mt-8">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mt-6 sm:mt-8">
           {/* Left: Story */}
           <motion.div
             variants={fadeInLeft}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="flex flex-col gap-6"
+            className="flex flex-col gap-4 sm:gap-6"
           >
-            <div className="glass rounded-2xl p-8 border border-white/[0.06]">
-              <h3 className="text-2xl font-bold text-white mb-4">Hi, I'm Amna 👋</h3>
-              <div className="flex flex-col gap-4 text-slate-400 leading-relaxed">
-                <p>
+            <div className="glass rounded-2xl p-4 sm:p-5 border border-white/[0.06]">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 break-words">Hi, I'm Amna 👋</h3>
+              <div className="flex flex-col gap-3 sm:gap-4 text-slate-400 leading-relaxed text-sm sm:text-base">
+                <p className="break-words">
                   It started with curiosity — a late night, a broken website, and the spark of wanting to understand <em className="text-slate-300 not-italic">why things work</em>. That curiosity turned into passion, and passion turned into profession.
                 </p>
-                <p>
+                <p className="break-words">
                   Today, I'm a <span className="text-white font-medium">MERN Stack Developer</span> with 1.5 years of freelancing experience, helping startups and businesses bring their ideas to life through clean code, thoughtful architecture, and interfaces people actually enjoy using.
                 </p>
-                <p>
+                <p className="break-words">
                   I've shipped 20+ projects — from fast-moving MVPs to polished SaaS dashboards — and I genuinely care about every detail: performance, accessibility, and the one micro-interaction that makes a user smile.
                 </p>
-                <p>
+                <p className="break-words">
                   When I'm not coding, you'll find me exploring the latest web technologies, contributing to open-source, or sketching out ideas for my next side project. I believe in lifelong learning and that the best developers are always students of their craft.
                 </p>
               </div>
@@ -63,29 +63,29 @@ export default function About() {
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mt-6">
                 {['React', 'Node.js', 'MongoDB', 'TypeScript', 'Tailwind CSS',  'Flutter', 'Next.js'].map(tag => (
-                  <span key={tag} className="tech-tag">{tag}</span>
+                  <span key={tag} className="tech-tag text-xs">{tag}</span>
                 ))}
               </div>
             </div>
 
             {/* Experience badge */}
-            <div className="flex items-center gap-4">
-              <div className="glass rounded-2xl px-6 py-4 border border-blue-500/20 flex items-center gap-4 flex-1">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/30">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+              <div className="glass rounded-2xl px-4 sm:px-6 py-3 sm:py-4 border border-blue-500/20 flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
+                <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-sm sm:text-lg shadow-lg shadow-blue-500/30 flex-shrink-0">
                   1.5
                 </div>
-                <div>
-                  <p className="text-white font-semibold">Years of Freelancing</p>
-                  <p className="text-slate-400 text-sm">Real projects. Real clients.</p>
+                <div className="min-w-0">
+                  <p className="text-white font-semibold text-sm sm:text-base truncate">Years of Freelancing</p>
+                  <p className="text-slate-400 text-xs sm:text-sm truncate">Real projects. Real clients.</p>
                 </div>
               </div>
-              <div className="glass rounded-2xl px-6 py-4 border border-purple-500/20 flex items-center gap-4 flex-1">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-purple-500/30">
+              <div className="glass rounded-2xl px-4 sm:px-6 py-3 sm:py-4 border border-purple-500/20 flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
+                <div className="w-10 sm:w-12 h-10 sm:h-12 rounded-xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white font-bold text-sm sm:text-lg shadow-lg shadow-purple-500/30 flex-shrink-0">
                   20+
                 </div>
-                <div>
-                  <p className="text-white font-semibold">Projects Shipped</p>
-                  <p className="text-slate-400 text-sm">From idea to deployment.</p>
+                <div className="min-w-0">
+                  <p className="text-white font-semibold text-sm sm:text-base truncate">Projects Shipped</p>
+                  <p className="text-slate-400 text-xs sm:text-sm truncate">From idea to deployment.</p>
                 </div>
               </div>
             </div>

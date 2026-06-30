@@ -44,7 +44,7 @@ export default function Navbar() {
           : 'py-5 bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-6 flex items-center justify-between">
         {/* Logo */}
         <motion.button
           onClick={() => handleNavClick('#home')}
@@ -112,7 +112,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="lg:hidden border-t border-white/[0.06] bg-[rgba(6,11,20,0.97)] backdrop-blur-xl"
           >
-            <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
+            <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 py-4 flex flex-col gap-1">
               {NAV_LINKS.map((link, i) => (
                 <motion.button
                   key={link.href}

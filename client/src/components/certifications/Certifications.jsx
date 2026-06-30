@@ -6,7 +6,7 @@ import { staggerItem } from '../../animations/variants'
 export default function Certifications() {
   return (
     <section className="section-padding bg-slate-950/50 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="Credentials"
           title={<>Certifications & <span className="gradient-text">Training</span></>}

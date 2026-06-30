@@ -9,7 +9,7 @@ export default function Blog() {
     <section id="blog" className="section-padding relative overflow-hidden">
       <div className="absolute top-0 left-0 w-64 h-64 bg-purple-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="Writing"
           title={<>Thoughts & <span className="gradient-text">Insights</span></>}

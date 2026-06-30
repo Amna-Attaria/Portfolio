@@ -110,8 +110,8 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-blue-600/5 to-transparent rounded-full blur-2xl" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-20 sm:pt-28 pb-16 sm:pb-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
           {/* Left: Text */}
           <div className="flex flex-col gap-6">
             {/* Badge */}
@@ -130,7 +130,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight break-words"
             >
               {PERSONAL_INFO.tagline.split(' ').slice(0, 2).join(' ')}{' '}
               <span className="gradient-text-warm">{PERSONAL_INFO.tagline.split(' ').slice(2, 4).join(' ')}</span>{' '}
@@ -143,7 +143,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl sm:text-3xl font-semibold text-slate-300"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-slate-300 break-words"
             >
               I'm a{' '}
               <RoleTyper roles={PERSONAL_INFO.roles} />

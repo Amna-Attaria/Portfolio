@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="absolute inset-0 bg-[#060b14]" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-80 h-40 bg-blue-600/5 rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-6 py-16">
+      <div className="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col gap-4">

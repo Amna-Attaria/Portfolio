@@ -20,7 +20,7 @@ export default function Projects() {
     <section id="projects" className="section-padding relative overflow-hidden bg-slate-950/50">
       <div className="absolute top-1/2 right-0 w-64 h-64 bg-blue-600/5 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-0">
         <SectionHeader
           eyebrow="My Work"
           title={<>Featured <span className="gradient-text">Projects</span></>}
@@ -28,14 +28,14 @@ export default function Projects() {
         />
 
         {/* Filter tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-10">
           {FILTERS.map(f => (
             <motion.button
               key={f}
               onClick={() => setFilter(f)}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
-              className={`px-5 py-2 rounded-xl text-sm font-medium transition-all ${
+              className={`px-3 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
                 filter === f
                   ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25'
                   : 'glass text-slate-400 hover:text-white border border-white/[0.06]'
